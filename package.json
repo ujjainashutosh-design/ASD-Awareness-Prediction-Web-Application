@@ -1,0 +1,15 @@
+{
+  "name": "spectrumsense",
+  "version": "1.0.0",
+  "description": "SpectrumSense – AI-powered ASD Awareness & Early Detection Platform",
+  "private": true,
+  "scripts": {
+    "setup": "npm run setup:server && npm run setup:client",
+    "setup:server": "cd server && npm install",
+    "setup:client": "cd client && npm install",
+    "start:server": "cd server && node index.js",
+    "start:client": "cd client && npm run dev",
+    "start:ml": "cd ml-service && python app.py",
+    "train:ml": "cd ml-service && python train.py"
+  }
+}
