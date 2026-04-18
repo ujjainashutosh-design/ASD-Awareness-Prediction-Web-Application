@@ -102,7 +102,7 @@ SpectrumSense follows a **Microservices / Three-Tier Architecture**:
                                 │ HTTP / REST
 ┌───────────────────────────────▼──────────────────────────────────────┐
 │              FRONTEND  ·  React 19 + Vite + TailwindCSS              │
-│                        (http://localhost:5173)                        │
+│                        (http://localhost:5173)                       │
 │                                                                      │
 │  Pages: Landing · Auth · Quiz · Dashboard · Results · About          │
 └───────────────┬──────────────────────────────────┬───────────────────┘
@@ -110,11 +110,11 @@ SpectrumSense follows a **Microservices / Three-Tier Architecture**:
                 │                                  │
 ┌───────────────▼──────────────────┐  ┌────────────▼───────────────────┐
 │   BACKEND  ·  Node.js + Express  │  │  ML SERVICE  ·  Python + Flask │
-│        (http://localhost:3001)    │  │     (http://localhost:5001)    │
+│        (http://localhost:3001)   │ │     (http://localhost:5001)     │
 │                                  │  │                                │
-│  • JWT Authentication             │  │  • Random Forest Classifier    │
-│  • Result persistence (JSON)      │  │  • /predict  POST endpoint     │
-│  • Proxy predict calls to ML svc  │  │  • /health   GET endpoint      │
+│  • JWT Authentication            │  │  • Random Forest Classifier    │
+│  • Result persistence (JSON)     │  │  • /predict  POST endpoint     │
+│  • Proxy predict calls to ML svc │  │  • /health   GET endpoint      │
 └──────────────────────────────────┘  └────────────────────────────────┘
 ```
 
